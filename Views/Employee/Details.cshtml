@@ -1,0 +1,95 @@
+﻿@model EmployeeManagement.Infrastructure.Entity.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Street)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.Street)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address.PinCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.PinCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address.LandMark)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.LandMark)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOJ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
